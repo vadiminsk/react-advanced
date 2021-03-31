@@ -10,6 +10,9 @@ const Header = () => {
           <NavLink className='p-2 text-dark' to='/'>
             Home
           </NavLink>
+          <NavLink className='p-2 text-dark' to='/purecomp'>
+            Pure component
+          </NavLink>
         </nav>
       </div>
     </header>
