@@ -16,6 +16,9 @@ const Header = () => {
           <NavLink className='p-2 text-dark' to='/adjel'>
             Adjacent
           </NavLink>
+          <NavLink className='p-2 text-dark' to='/profile'>
+            Profile
+          </NavLink>
         </nav>
       </div>
     </header>
