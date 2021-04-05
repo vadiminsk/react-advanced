@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -12,6 +12,15 @@ const Header = () => {
           </NavLink>
           <NavLink className='p-2 text-dark' to='/purecomp'>
             Pure component
+          </NavLink>
+          <NavLink className='p-2 text-dark' to='/adjel'>
+            Adjacent
+          </NavLink>
+          <NavLink className='p-2 text-dark' to='/profile'>
+            Profile
+          </NavLink>
+          <NavLink className='p-2 text-dark' to='/user'>
+            User
           </NavLink>
         </nav>
       </div>
