@@ -8,7 +8,7 @@ const Header = () => {
         <h5 className='my-0 mr-md-auto font-weight-normal'>Company name</h5>
         <nav className='my-2 my-md-0 mr-md-3'>
           <NavLink className='p-2' to='/'>
-            Header
+            Home
           </NavLink>
         </nav>
       </div>
