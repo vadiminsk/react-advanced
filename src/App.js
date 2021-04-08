@@ -1,10 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-// COMPONENTS
+import Home from './components/Home';
 import Header from './components/Header';
-import CssTr from './components/CSStransition';
-import Tgroup from './components/Tgroup';
-import TransitionComp from './components/Transition';
 
 const App = () => {
   return (
@@ -12,9 +9,7 @@ const App = () => {
       <Header />
       <div className='container'>
         <Switch>
-          <Route path='/transition' component={TransitionComp}></Route>
-          <Route path='/csstransition' component={CssTr}></Route>
-          <Route path='/tgroup' component={Tgroup}></Route>
+          <Route path='/' component={Home}></Route>
         </Switch>
       </div>
     </BrowserRouter>
