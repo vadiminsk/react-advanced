@@ -1,7 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { moviewList } from '../store/actions';
 
-const Home = () => {
-  return <div>Home page</div>;
+class Home extends Component {
+  getMoviesHandler() {
+    this.props.dispatch(moviewList());
+  }
+
+  render() {
+    console.log(this.ptops);
+    return (
+      <>
+        <button onClick={() => this.getMoviesHandler()}>Get movies</button>
+      </>
+    );
+  }
+}
+
+const mapStateToProps = (state) => {
+  return { moviews: state.movies };
 };
 
-export default Home;
+export default connect(mapStateToProps)(Home);
