@@ -8,6 +8,7 @@ class Home extends Component {
   }
 
   render() {
+    console.log(this.ptops);
     return (
       <>
         <button onClick={() => this.getMoviesHandler()}>Get movies</button>
@@ -16,4 +17,8 @@ class Home extends Component {
   }
 }
 
-export default connect()(Home);
+const mapStateToProps = (state) => {
+  return { moviews: state.movies };
+};
+
+export default connect(mapStateToProps)(Home);
